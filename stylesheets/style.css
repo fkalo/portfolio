@@ -271,35 +271,35 @@
 }
 
 .diamond--discover {
-  background-image: url("images/diamonds/Research.png");
+  background-image: url("../images/diamonds/Research.png");
 }
 
 .diamond--define {
-  background-image: url("images/diamonds/Synthesis.png");
+  background-image: url("../images/diamonds/Synthesis.png");
 }
 
 .diamond--develop {
-  background-image: url("images/diamonds/Ideation.png");
+  background-image: url("../images/diamonds/Ideation.png");
 }
 
 .diamond--deliver {
-  background-image: url("images/diamonds/Implementation.png");
+  background-image: url("../images/diamonds/Implementation.png");
 }
 
 .diamond--discover:hover {
-  background-image: url("images/diamonds/Research_accent.png");
+  background-image: url("../images/diamonds/Research_accent.png");
 }
 
 .diamond--define:hover {
-  background-image: url("images/diamonds/Synthesis_accent.png");
+  background-image: url("../images/diamonds/Synthesis_accent.png");
 }
 
 .diamond--develop:hover {
-  background-image: url("images/diamonds/Ideation_accent.png");
+  background-image: url("../images/diamonds/Ideation_accent.png");
 }
 
 .diamond--deliver:hover {
-  background-image: url("images/diamonds/Implementation_accent.png");
+  background-image: url("../images/diamonds/Implementation_accent.png");
 }
 
 .diamond--research,
