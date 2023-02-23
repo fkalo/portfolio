@@ -212,14 +212,24 @@
 
 .site-link:link,
 .site-link:visited {
-  color: #fff;
+  color: #90bcb0;
   text-decoration: none;
   font-weight: 200;
 }
 
 .site-link:hover,
 .site-link:active {
-  color: #90bcb0;
+  font-weight: 300;
+}
+
+.omnifood-link:hover,
+.omnifood-link:active {
+  letter-spacing: 1.35px;
+}
+
+.cottonpasta-link:hover,
+.cottonpasta-link:active {
+  letter-spacing: -0.1px;
 }
 
 /* ****************** */

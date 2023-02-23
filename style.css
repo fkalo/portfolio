@@ -260,7 +260,7 @@
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   display: inline-grid;
-  transition: all 1s ease-in-out;
+  /* transition: all 0.1s; */
 }
 
 .diamond {
@@ -302,24 +302,12 @@
   background-image: url("./images/diamonds/Implementation_accent.png");
 }
 
-.diamond--research,
-.diamond--synthesis,
-.diamond--ideation,
-.diamond--implementation {
+.column--discover,
+.column--define,
+.column--develop,
+.column--deliver {
   position: relative;
   text-align: center;
-}
-
-.diamond--research-initial,
-.diamond--synthesis-initial,
-.diamond--ideation-initial,
-.diamond--implementation-initial,
-.diamond--research-selected,
-.diamond--synthesis-selected,
-.diamond--ideation-selected,
-.diamond--implementation-selected {
-  width: 18rem;
-  height: 36rem;
 }
 
 .text {
@@ -357,6 +345,7 @@
 .deliver--list {
   margin: auto 3.2rem;
   font-size: 1.7rem;
+  transition: inherit;
 }
 
 .discover--list li:not(:last-child),
@@ -366,35 +355,21 @@
   margin-bottom: 1.6rem;
 }
 
-.diamond--research,
-.diamond--ideation {
+.diamond--discover,
+.diamond--develop {
   border-right: solid 1px #333;
 }
 
-.diamond--research:hover,
-.diamond--synthesis:hover,
-.diamond--ideation:hover,
-.diamond--implementation:hover,
-.diamond--research:active,
-.diamond--synthesis:active,
-.diamond--ideation:active,
-.diamond--implementation:active {
+.diamond--discover:hover,
+.diamond--define:hover,
+.diamond--develop:hover,
+.diamond--deliver:hover,
+.diamond--discover:active,
+.diamond--define:active,
+.diamond--develop:active,
+.diamond--deliver:active {
   cursor: pointer;
   transition: all 0.4s;
-}
-
-.diamond--research:hover .diamond--research-selected,
-.diamond--synthesis:hover .diamond--synthesis-selected,
-.diamond--ideation:hover .diamond--ideation-selected,
-.diamond--implementation:hover .diamond--implementation-selected {
-  display: block;
-}
-
-.diamond--research:hover .diamond--research-initial,
-.diamond--synthesis:hover .diamond--synthesis-initial,
-.diamond--ideation:hover .diamond--ideation-initial,
-.diamond--implementation:hover .diamond--implementation-initial {
-  display: none;
 }
 
 .columbo {
@@ -404,19 +379,6 @@
 .columbo:hover {
   cursor: url("./images/columbo_cursor.png"), pointer;
 }
-
-/* .active #discover {
-  animation-name: slide;
-  animation-duration: 2s;
-  animation-fill-mode: none;
-  animation-delay: 0;
-}
-
-@keyframes slide {
-  100% {
-    margin-left: 0;
-  }
-} */
 
 .tasks {
   font-size: 2rem;
