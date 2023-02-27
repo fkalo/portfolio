@@ -56,6 +56,38 @@ $(document).ready(function () {
     });
   });
 
+  // Close mobile navigation menu on index
+
+  const navLink = document.querySelector(".main-nav-link");
+
+  navLink.addEventListener("click", function (e) {
+    const openNav = document.querySelector(".nav-open");
+    const btnNav = openNav.querySelector("button.btn-mobile-nav");
+    if (headerEl.classList.contains("nav-open")) {
+      btnNav.click();
+    }
+  });
+
+  const navCta = document.querySelector(".nav-cta");
+
+  navCta.addEventListener("click", function (e) {
+    const openNav = document.querySelector(".nav-open");
+    const btnNav = openNav.querySelector("button.btn-mobile-nav");
+    if (headerEl.classList.contains("nav-open")) {
+      btnNav.click();
+    }
+  });
+
+  // Close mobile navigation menu on scroll
+
+  document.addEventListener("scroll", function (e) {
+    const openNav = document.querySelector(".nav-open");
+    const btnNav = openNav.querySelector("button.btn-mobile-nav");
+    if (headerEl.classList.contains("nav-open")) {
+      btnNav.click();
+    }
+  });
+
   ///////////////////////////////////////////////////////////
   // Diamond opening
 
@@ -69,19 +101,18 @@ $(document).ready(function () {
   const hiddenDefine = document.querySelector("#hidden-define");
   const hiddenDevelop = document.querySelector("#hidden-develop");
   const hiddenDeliver = document.querySelector("#hidden-deliver");
-  const activeDiamond = document.querySelector(".active");
 
   discover.addEventListener("click", function () {
     gridDiamonds.classList.toggle("active");
     if (
       gridDiamonds.style.gridTemplateColumns ===
-      "min-content 2fr min-content min-content min-content"
+      "min-content minmax(488px, auto) min-content min-content min-content"
     ) {
       gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
       hiddenDiscover.style.display = "none";
     } else {
       gridDiamonds.style.gridTemplateColumns =
-        "min-content 2fr min-content min-content min-content";
+        "min-content minmax(488px, auto) min-content min-content min-content";
       hiddenDiscover.style.display = "flex";
       hiddenDefine.style.display = "none";
       hiddenDevelop.style.display = "none";
@@ -93,13 +124,13 @@ $(document).ready(function () {
     gridDiamonds.classList.toggle("active");
     if (
       gridDiamonds.style.gridTemplateColumns ===
-      "min-content min-content 2fr min-content min-content"
+      "min-content min-content minmax(488px, auto) min-content min-content"
     ) {
       gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
       hiddenDefine.style.display = "none";
     } else {
       gridDiamonds.style.gridTemplateColumns =
-        "min-content min-content 2fr min-content min-content";
+        "min-content min-content minmax(488px, auto) min-content min-content";
       hiddenDiscover.style.display = "none";
       hiddenDefine.style.display = "flex";
       hiddenDevelop.style.display = "none";
@@ -111,13 +142,13 @@ $(document).ready(function () {
     gridDiamonds.classList.toggle("active");
     if (
       gridDiamonds.style.gridTemplateColumns ===
-      "min-content min-content min-content 2fr min-content"
+      "min-content min-content min-content minmax(488px, auto) min-content"
     ) {
       gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
       hiddenDevelop.style.display = "none";
     } else {
       gridDiamonds.style.gridTemplateColumns =
-        "min-content min-content min-content 2fr min-content";
+        "min-content min-content min-content minmax(488px, auto) min-content";
       hiddenDiscover.style.display = "none";
       hiddenDefine.style.display = "none";
       hiddenDevelop.style.display = "flex";
@@ -129,19 +160,44 @@ $(document).ready(function () {
     gridDiamonds.classList.toggle("active");
     if (
       gridDiamonds.style.gridTemplateColumns ===
-      "min-content min-content min-content min-content 2fr"
+      "min-content min-content min-content min-content minmax(488px, auto)"
     ) {
       gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
       hiddenDeliver.style.display = "none";
     } else {
       gridDiamonds.style.gridTemplateColumns =
-        "min-content min-content min-content min-content 2fr";
+        "min-content min-content min-content min-content minmax(488px, auto)";
       hiddenDiscover.style.display = "none";
       hiddenDefine.style.display = "none";
       hiddenDevelop.style.display = "none";
       hiddenDeliver.style.display = "flex";
     }
   });
+
+  // Diamond horizontal scroll under 1344px viewport width
+
+  // const gridCenter = document.querySelector(".grid-center");
+
+  // gridCenter.addEventListener("click", function (e) {
+  //   if (
+  //     gridDiamonds.classList.contains("active")
+  //     // window.innerWidth < "1344px"
+  //   ) {
+  //     gridCenter.style.justifyContent = "left";
+  //   }
+  // });
+
+  // if (gridDiamonds.classList.contains("active")) {
+  //   gridCenter.addEventListener("click", function (e) {
+  //     gridCenter.style.justifyContent = "left";
+  //   });
+  // }
+
+  // gridCenter.addEventListener("click", function (e) {
+  //   if (gridDiamonds.classList.contains("active") == "false") {
+  //     gridCenter.style.justifyContent = "center";
+  //   }
+  // });
 
   ///////////////////////////////////////////////////////////
   // Pretty navigation

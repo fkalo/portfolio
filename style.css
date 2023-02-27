@@ -185,6 +185,7 @@
 }
 
 .method-word-1 {
+  letter-spacing: 0.6px;
   animation-name: pushDown;
   animation-duration: 6s;
   animation-fill-mode: forwards;
@@ -258,9 +259,9 @@
 
 .grid-diamonds {
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(36rem);
   justify-items: center;
   display: inline-grid;
-  /* transition: all 0.1s; */
 }
 
 .diamond {
@@ -344,8 +345,26 @@
 .develop--list,
 .deliver--list {
   margin: auto 3.2rem;
-  font-size: 1.7rem;
-  transition: inherit;
+  font-size: 1.8rem;
+}
+
+.discover--list,
+.define--list,
+.develop--list,
+.deliver--list,
+.columbo {
+  animation-name: appearText;
+  animation-duration: 1.8s;
+}
+
+@keyframes appearText {
+  0% {
+    color: #333;
+  }
+
+  100% {
+    color: #fff;
+  }
 }
 
 .discover--list li:not(:last-child),
@@ -372,11 +391,8 @@
   transition: all 0.4s;
 }
 
-.columbo {
-  color: #90bcb0;
-}
-
 .columbo:hover {
+  color: #90bcb0;
   cursor: url("./images/columbo_cursor.png"), pointer;
 }
 

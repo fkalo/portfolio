@@ -16,6 +16,16 @@ Instead, 1rem = 1em = 16px */
     letter-spacing: 0.2px;
   }
 
+  /* style.css */
+
+  .discover--list,
+  .define--list,
+  .develop--list,
+  .deliver--list {
+    margin: auto 3.2rem;
+    font-size: 1.6rem;
+  }
+
   /* projects.css */
   .container--project {
     max-width: 120rem;
@@ -52,6 +62,19 @@ Instead, 1rem = 1em = 16px */
     max-width: 120rem;
   }
 
+  .grid--5-cols {
+    column-gap: 2rem;
+  }
+
+  .heading-primary {
+    font-size: 12rem;
+    letter-spacing: 18px;
+  }
+
+  .subheading {
+    margin-bottom: 5.6rem;
+  }
+
   .description {
     font-size: 2rem;
     letter-spacing: 0.2px;
@@ -63,9 +86,19 @@ Instead, 1rem = 1em = 16px */
     font-size: 1.8rem;
     letter-spacing: 0.3px;
   }
+  /* 
+  .grid-center {
+    justify-content: left;
+  } */
 
   .grid-diamonds > .text {
     font-size: 1.8rem;
+  }
+
+  .email:link,
+  .email:visited {
+    font-size: 6rem;
+    letter-spacing: 9px;
   }
 
   /* projects.css */
@@ -113,7 +146,7 @@ Instead, 1rem = 1em = 16px */
   }
 
   .grid--5-cols {
-    column-gap: 1.2rem;
+    column-gap: 1.6rem;
   }
 
   .heading-primary {
@@ -160,6 +193,10 @@ Instead, 1rem = 1em = 16px */
     letter-spacing: 0.2px;
   }
 
+  .grid-diamonds {
+    grid-auto-flow: column;
+    overflow-x: auto;
+  }
   /* projects.css */
   .container--project {
     max-width: 90rem;
