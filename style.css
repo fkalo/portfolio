@@ -134,6 +134,7 @@
   overflow: hidden;
   transition: all 0.4s;
   aspect-ratio: 1;
+  text-decoration: none;
 }
 
 .work-content {
