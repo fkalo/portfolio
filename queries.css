@@ -17,6 +17,11 @@ Instead, 1rem = 1em = 16px */
   }
 
   /* style.css */
+  #work,
+  #methods,
+  #contact {
+    padding: 6rem 0;
+  }
 
   .discover--list,
   .define--list,
@@ -78,18 +83,34 @@ Instead, 1rem = 1em = 16px */
   .description {
     font-size: 2rem;
     letter-spacing: 0.2px;
+    margin-bottom: 3.6rem;
   }
 
   /* style.css */
+  #work,
+  #methods,
+  #contact {
+    padding: 8rem 0;
+  }
+
   .work-content {
     padding: 4.8rem 2.4rem 4.8rem 2.4rem;
     font-size: 1.8rem;
     letter-spacing: 0.3px;
   }
-  /* 
-  .grid-center {
-    justify-content: left;
-  } */
+
+  .diamond {
+    width: 16rem;
+    height: 32rem;
+  }
+
+  .discover--list,
+  .define--list,
+  .develop--list,
+  .deliver--list {
+    margin: auto 2.4rem;
+    font-size: 1.5rem;
+  }
 
   .grid-diamonds > .text {
     font-size: 1.8rem;
@@ -163,14 +184,7 @@ Instead, 1rem = 1em = 16px */
     margin-bottom: 6.4rem;
   }
 
-  /* .description {
-    font-size: 1.8rem;
-  } */
-
   /* style.css */
-  .logo {
-    height: 3.2rem;
-  }
 
   .main-nav-link:link,
   .main-nav-link:visited {
@@ -187,16 +201,39 @@ Instead, 1rem = 1em = 16px */
     letter-spacing: 2.4px;
   }
 
+  .description {
+    letter-spacing: 0.2px;
+    margin-bottom: 2.4rem;
+  }
+
   .work-content {
-    padding: 4.8rem 2.4rem 4.8rem 2.4rem;
-    font-size: 1.7rem;
+    padding: 3.6rem 2rem 3.6rem 2rem;
+    font-size: 1.6rem;
     letter-spacing: 0.2px;
   }
 
-  .grid-diamonds {
-    grid-auto-flow: column;
-    overflow-x: auto;
+  #methods {
+    padding: 9rem 0;
   }
+
+  .grid--methods {
+    margin-bottom: 0;
+  }
+
+  .text--even,
+  .text--odd {
+    font-size: 1.8rem;
+  }
+
+  .discover--list,
+  .define--list,
+  .develop--list,
+  .deliver--list {
+    margin: 4.8rem 3.2rem;
+    height: 23rem;
+    font-size: 1.55rem;
+  }
+
   /* projects.css */
   .container--project {
     max-width: 90rem;
@@ -204,6 +241,12 @@ Instead, 1rem = 1em = 16px */
 
   .grid--project {
     column-gap: 5.6rem;
+  }
+
+  .grid-diamonds > .hidden {
+    order: 5;
+    grid-column: 1 / -1;
+    width: 64rem;
   }
 
   .pager {
@@ -262,6 +305,20 @@ Instead, 1rem = 1em = 16px */
   }
 
   /* style.css */
+  .heading-primary {
+    font-size: 12rem;
+    letter-spacing: 18px;
+    line-height: 1.2;
+    margin-bottom: 2.4rem;
+  }
+
+  .email:link,
+  .email:visited {
+    font-size: 4.8rem;
+    letter-spacing: 6px;
+    margin-top: 30rem;
+  }
+
   .footer .container {
     gap: 1.2rem;
   }
@@ -288,6 +345,10 @@ Instead, 1rem = 1em = 16px */
   .grid--project > img:not(.thumbnail) {
     align-self: start;
     margin-bottom: 6.4rem;
+  }
+
+  .section-project-intro {
+    height: 88vh;
   }
 
   .project-intro {
@@ -395,7 +456,7 @@ Instead, 1rem = 1em = 16px */
   }
 
   .nav-open .main-nav .main-nav-list .hidden {
-    display: inline block;
+    display: inline;
   }
 
   .main-nav-link:link,
@@ -416,7 +477,6 @@ Instead, 1rem = 1em = 16px */
 
   .btn-mobile-nav {
     display: block;
-    height: 3.6rem;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -451,6 +511,10 @@ Instead, 1rem = 1em = 16px */
 
 @media (max-width: 48em) {
   /* general.css */
+  body {
+    font-size: 1.6rem;
+  }
+
   .grid--3-cols {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -459,11 +523,86 @@ Instead, 1rem = 1em = 16px */
     grid-template-columns: repeat(2, 1fr);
   }
 
-  body {
-    font-size: 1.6rem;
+  .grid--5-cols {
+    overflow-x: scroll;
+    column-gap: 2.4rem;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .grid--5-cols::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  .heading-primary {
+    font-size: 8rem;
+    letter-spacing: 20px;
+    line-height: 1.2;
+    margin-bottom: 2.4rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 2.4rem;
   }
 
   /* style.css */
+  .section-hero {
+    min-height: 93vh;
+  }
+
+  .hero-description {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 6.4rem;
+  }
+
+  .work {
+    height: 24rem;
+    width: 24rem;
+  }
+
+  .work:hover,
+  .work:active {
+    transform: none;
+    box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.075);
+  }
+
+  .work-content {
+    padding: 3.6rem 2.4rem 3.6rem 2.4rem;
+    font-size: 2rem;
+    letter-spacing: 0.2px;
+  }
+
+  .diamond {
+    width: 12rem;
+    height: 24rem;
+  }
+
+  .text--even,
+  .text--odd {
+    font-size: 1.6rem;
+  }
+
+  .grid-diamonds > .hidden {
+    width: 48rem;
+  }
+
+  .discover--list,
+  .define--list,
+  .develop--list,
+  .deliver--list {
+    margin: 3.2rem 1.6rem;
+    height: 32rem;
+  }
+
+  .email:link,
+  .email:visited {
+    font-size: 3.6rem;
+    letter-spacing: 4px;
+    margin-top: 15.6rem;
+  }
 
   /* projects.css */
   .container--project {
@@ -520,10 +659,33 @@ Instead, 1rem = 1em = 16px */
 
 @media (max-width: 34em) {
   /* general.css */
+  .container {
+    padding: 0 2rem;
+    max-width: 42rem;
+  }
 
-  /* body {
+  .heading-primary {
+    font-size: 7.2rem;
+    letter-spacing: 12px;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 5.6rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    letter-spacing: 1.3px;
+  }
+
+  .subheading {
     font-size: 1.5rem;
-  } */
+    margin-bottom: 6.4rem;
+  }
+
+  .description {
+    line-height: 3.2rem;
+  }
 
   .grid--2-cols,
   .grid--4-cols {
@@ -535,6 +697,56 @@ Instead, 1rem = 1em = 16px */
   }
 
   /* style.css */
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .grid--methods {
+    grid-template-columns: 1fr;
+    display: inline-grid;
+    max-height: max-content;
+    grid-auto-rows: auto;
+    margin-bottom: 0.6rem;
+  }
+
+  .grid--methods > .description {
+    margin-bottom: 0;
+  }
+
+  .grid--methods + .description {
+    line-height: 4rem;
+  }
+
+  .overflow {
+    height: 4rem;
+    overflow: hidden;
+  }
+
+  .diamond {
+    width: 10rem;
+    height: 20rem;
+  }
+
+  .text--even,
+  .text--odd {
+    font-size: 1.5rem;
+  }
+
+  .grid-diamonds > .hidden {
+    width: 40rem;
+  }
+
+  .email:link,
+  .email:visited {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-top: 12.8rem;
+  }
 
   /* projects.css */
   .container--project {
@@ -565,6 +777,10 @@ Instead, 1rem = 1em = 16px */
   .pager-circle {
     width: 8.6rem;
     height: 8.6rem;
+  }
+
+  .section-project-intro {
+    height: 80vh;
   }
 
   .project-intro {

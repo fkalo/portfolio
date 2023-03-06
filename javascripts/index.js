@@ -91,6 +91,13 @@ $(document).ready(function () {
   ///////////////////////////////////////////////////////////
   // Diamond opening
 
+  const bigDesktop = window.matchMedia("(min-width: 1345px)");
+  const smallDesktop = window.matchMedia(
+    "(min-width: 1201px) and (max-width: 1344px)"
+  );
+  const tablet = window.matchMedia("(max-width: 1200px)");
+
+  const sectionMethods = document.querySelector("#methods");
   const gridDiamonds = document.querySelector(".grid-diamonds");
   const discover = document.querySelector("#discover");
   const define = document.querySelector("#define");
@@ -102,77 +109,269 @@ $(document).ready(function () {
   const hiddenDevelop = document.querySelector("#hidden-develop");
   const hiddenDeliver = document.querySelector("#hidden-deliver");
 
-  discover.addEventListener("click", function () {
-    gridDiamonds.classList.toggle("active");
-    if (
-      gridDiamonds.style.gridTemplateColumns ===
-      "min-content minmax(488px, auto) min-content min-content min-content"
-    ) {
-      gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
-      hiddenDiscover.style.display = "none";
-    } else {
-      gridDiamonds.style.gridTemplateColumns =
-        "min-content minmax(488px, auto) min-content min-content min-content";
-      hiddenDiscover.style.display = "flex";
-      hiddenDefine.style.display = "none";
-      hiddenDevelop.style.display = "none";
-      hiddenDeliver.style.display = "none";
-    }
-  });
+  if (bigDesktop.matches) {
+    discover.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (
+        gridDiamonds.style.gridTemplateColumns ===
+        "min-content minmax(488px, auto) min-content min-content min-content"
+      ) {
+        gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+        hiddenDiscover.style.display = "none";
+      } else {
+        gridDiamonds.style.gridTemplateColumns =
+          "min-content minmax(488px, auto) min-content min-content min-content";
+        hiddenDiscover.style.display = "flex";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "none";
+      }
+    });
 
-  define.addEventListener("click", function () {
-    gridDiamonds.classList.toggle("active");
-    if (
-      gridDiamonds.style.gridTemplateColumns ===
-      "min-content min-content minmax(488px, auto) min-content min-content"
-    ) {
-      gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
-      hiddenDefine.style.display = "none";
-    } else {
-      gridDiamonds.style.gridTemplateColumns =
-        "min-content min-content minmax(488px, auto) min-content min-content";
-      hiddenDiscover.style.display = "none";
-      hiddenDefine.style.display = "flex";
-      hiddenDevelop.style.display = "none";
-      hiddenDeliver.style.display = "none";
-    }
-  });
+    define.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (
+        gridDiamonds.style.gridTemplateColumns ===
+        "min-content min-content minmax(488px, auto) min-content min-content"
+      ) {
+        gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+        hiddenDefine.style.display = "none";
+      } else {
+        gridDiamonds.style.gridTemplateColumns =
+          "min-content min-content minmax(488px, auto) min-content min-content";
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "flex";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "none";
+      }
+    });
 
-  develop.addEventListener("click", function () {
-    gridDiamonds.classList.toggle("active");
-    if (
-      gridDiamonds.style.gridTemplateColumns ===
-      "min-content min-content min-content minmax(488px, auto) min-content"
-    ) {
-      gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
-      hiddenDevelop.style.display = "none";
-    } else {
-      gridDiamonds.style.gridTemplateColumns =
-        "min-content min-content min-content minmax(488px, auto) min-content";
-      hiddenDiscover.style.display = "none";
-      hiddenDefine.style.display = "none";
-      hiddenDevelop.style.display = "flex";
-      hiddenDeliver.style.display = "none";
-    }
-  });
+    develop.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (
+        gridDiamonds.style.gridTemplateColumns ===
+        "min-content min-content min-content minmax(488px, auto) min-content"
+      ) {
+        gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+        hiddenDevelop.style.display = "none";
+      } else {
+        gridDiamonds.style.gridTemplateColumns =
+          "min-content min-content min-content minmax(488px, auto) min-content";
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "flex";
+        hiddenDeliver.style.display = "none";
+      }
+    });
 
-  deliver.addEventListener("click", function () {
-    gridDiamonds.classList.toggle("active");
-    if (
-      gridDiamonds.style.gridTemplateColumns ===
-      "min-content min-content min-content min-content minmax(488px, auto)"
-    ) {
-      gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
-      hiddenDeliver.style.display = "none";
-    } else {
-      gridDiamonds.style.gridTemplateColumns =
-        "min-content min-content min-content min-content minmax(488px, auto)";
-      hiddenDiscover.style.display = "none";
-      hiddenDefine.style.display = "none";
-      hiddenDevelop.style.display = "none";
-      hiddenDeliver.style.display = "flex";
-    }
-  });
+    deliver.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (
+        gridDiamonds.style.gridTemplateColumns ===
+        "min-content min-content min-content min-content minmax(488px, auto)"
+      ) {
+        gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+        hiddenDeliver.style.display = "none";
+      } else {
+        gridDiamonds.style.gridTemplateColumns =
+          "min-content min-content min-content min-content minmax(488px, auto)";
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "flex";
+      }
+    });
+  }
+
+  ///////below 1344px//////
+
+  if (smallDesktop.matches) {
+    discover.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (
+        gridDiamonds.style.gridTemplateColumns ===
+        "min-content minmax(440px, auto) min-content min-content min-content"
+      ) {
+        gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+        hiddenDiscover.style.display = "none";
+      } else {
+        gridDiamonds.style.gridTemplateColumns =
+          "min-content minmax(440px, auto) min-content min-content min-content";
+        hiddenDiscover.style.display = "flex";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "none";
+      }
+    });
+
+    define.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (
+        gridDiamonds.style.gridTemplateColumns ===
+        "min-content min-content minmax(440px, auto) min-content min-content"
+      ) {
+        gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+        hiddenDefine.style.display = "none";
+      } else {
+        gridDiamonds.style.gridTemplateColumns =
+          "min-content min-content minmax(440px, auto) min-content min-content";
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "flex";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "none";
+      }
+    });
+
+    develop.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (
+        gridDiamonds.style.gridTemplateColumns ===
+        "min-content min-content min-content minmax(440px, auto) min-content"
+      ) {
+        gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+        hiddenDevelop.style.display = "none";
+      } else {
+        gridDiamonds.style.gridTemplateColumns =
+          "min-content min-content min-content minmax(440px, auto) min-content";
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "flex";
+        hiddenDeliver.style.display = "none";
+      }
+    });
+
+    deliver.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (
+        gridDiamonds.style.gridTemplateColumns ===
+        "min-content min-content min-content min-content minmax(440px, auto)"
+      ) {
+        gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+        hiddenDeliver.style.display = "none";
+      } else {
+        gridDiamonds.style.gridTemplateColumns =
+          "min-content min-content min-content min-content minmax(440px, auto)";
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "flex";
+      }
+    });
+  }
+
+  ///////below 1200px//////
+
+  if (tablet.matches) {
+    discover.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (hiddenDiscover.style.display == "flex") {
+        hiddenDiscover.style.display = "none";
+        sectionMethods.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "end",
+        });
+      } else {
+        hiddenDiscover.style.display = "flex";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "none";
+        hiddenDiscover.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "end",
+        });
+      }
+    });
+
+    define.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (hiddenDefine.style.display == "flex") {
+        hiddenDefine.style.display = "none";
+        sectionMethods.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "end",
+        });
+      } else {
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "flex";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "none";
+        hiddenDefine.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "end",
+        });
+      }
+    });
+
+    develop.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (hiddenDevelop.style.display == "flex") {
+        hiddenDevelop.style.display = "none";
+        sectionMethods.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "end",
+        });
+      } else {
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "flex";
+        hiddenDeliver.style.display = "none";
+        hiddenDevelop.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "end",
+        });
+      }
+    });
+
+    deliver.addEventListener("click", function () {
+      gridDiamonds.classList.toggle("active");
+      if (hiddenDeliver.style.display == "flex") {
+        hiddenDeliver.style.display = "none";
+        sectionMethods.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "end",
+        });
+      } else {
+        hiddenDiscover.style.display = "none";
+        hiddenDefine.style.display = "none";
+        hiddenDevelop.style.display = "none";
+        hiddenDeliver.style.display = "flex";
+        hiddenDeliver.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "end",
+        });
+      }
+    });
+  }
+
+  // Force refresh page on resize
+
+  // jQuery(function ($) {
+  //   var windowWidth = $(window).width();
+  //   var windowHeight = $(window).height();
+
+  //   $(window).resize(function () {
+  //     if (
+  //       windowWidth != $(window).width() ||
+  //       windowHeight != $(window).height()
+  //     ) {
+  //       location.reload();
+  //       return;
+  //     }
+  //   });
+  // });
+
+  // window.addEventListener("resize", function () {
+  //   "use strict";
+  //   window.location.reload();
+  // });
 
   // Diamond horizontal scroll under 1344px viewport width
 

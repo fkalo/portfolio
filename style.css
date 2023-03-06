@@ -109,6 +109,7 @@
   justify-content: center;
   align-items: center;
   padding: 24rem 0;
+  height: 95vh;
 }
 
 .hero-description {
@@ -261,6 +262,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: minmax(36rem);
   justify-items: center;
+  align-items: center;
   display: inline-grid;
 }
 
@@ -273,18 +275,22 @@
 
 .diamond--discover {
   background-image: url("./images/diamonds/Research.png");
+  position: relative;
 }
 
 .diamond--define {
   background-image: url("./images/diamonds/Synthesis.png");
+  position: relative;
 }
 
 .diamond--develop {
   background-image: url("./images/diamonds/Ideation.png");
+  position: relative;
 }
 
 .diamond--deliver {
   background-image: url("./images/diamonds/Implementation.png");
+  position: relative;
 }
 
 .diamond--discover:hover {
