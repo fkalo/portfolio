@@ -511,9 +511,6 @@ Instead, 1rem = 1em = 16px */
 
 @media (max-width: 48em) {
   /* general.css */
-  body {
-    font-size: 1.6rem;
-  }
 
   .grid--3-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -768,15 +765,6 @@ Instead, 1rem = 1em = 16px */
     flex-direction: column;
     gap: 1.2rem;
     flex: none;
-  }
-
-  .pager {
-    font-size: 1.15rem;
-  }
-
-  .pager-circle {
-    width: 8.6rem;
-    height: 8.6rem;
   }
 
   .section-project-intro {
