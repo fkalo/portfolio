@@ -224,6 +224,7 @@
   z-index: 100;
   left: 6.4rem;
   top: 2.4rem;
+  white-space: nowrap;
 }
 
 .roadmap .project-title {
@@ -233,6 +234,7 @@
   bottom: 3rem;
   font-size: 5.6rem;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .ghac-connection .project-title {
@@ -242,6 +244,7 @@
   left: 10rem;
   font-size: 5.6rem;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .ghac-connection .project-subtitle {
