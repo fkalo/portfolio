@@ -52,6 +52,25 @@ Bigger cards: 11px
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
 }
 
 html {
@@ -64,8 +83,10 @@ body {
   font-weight: 400;
   font-size: 2.2rem;
   line-height: 1;
-  color: #fff;
-  background-color: #333;
+  color: #1B3A4B;
+  background-color: #F2FAF7;
+  /* background-color: #FBE0C3; */
+  /* background-color: #ffe6a7; */
   overflow-x: hidden;
   /* scroll-behavior: smooth; */
 }
@@ -74,8 +95,8 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /* ****************** */
 
-.section {
-  padding: 12rem 0;
+.section:not(.testimonials, .section-hero) {
+  padding: 0rem 0;
   margin-bottom: 8rem;
   min-height: 100vh;
 }
@@ -94,7 +115,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   display: inline-grid;
   max-height: 4rem;
-  column-gap: 1rem;
+  column-gap: 2rem;
   overflow: hidden;
   margin-bottom: 4.8rem;
 }
@@ -151,7 +172,7 @@ body {
 
 .subheading {
   font-family: "Comfortaa", sans-serif;
-  color: #90bcb0;
+  color: #509c87;
   display: block;
   font-size: 1.8rem;
   font-weight: 500;
@@ -174,6 +195,10 @@ body {
 
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
+}
+
+.no-margin {
+  margin-bottom: 0 !important;
 }
 
 .center-text {

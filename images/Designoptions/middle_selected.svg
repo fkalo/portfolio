@@ -1,0 +1,42 @@
+<svg width="530" height="501" viewBox="0 0 530 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="141" y="281" width="235" height="172" fill="#EAEDF1"/>
+<path d="M440 482V301L424 294V458.5L440 482Z" fill="#E7E7E8"/>
+<path d="M455 301V500H75V319H196V482H440V301H455Z" fill="white"/>
+<path d="M106 168L1 47H529L455 132L440 168H106Z" fill="#287FFF"/>
+<rect x="1" y="34" width="528" height="13" fill="#7AAEFB"/>
+<path d="M529 47V34H1V47L106 168L455 132L529 47Z" stroke="#B1B1B5" stroke-width="2"/>
+<path d="M427 289V110H106V289H427Z" fill="#7AAEFB"/>
+<path d="M440 301H455V62H440V301Z" fill="#7AAEFB"/>
+<path d="M411 439V138H358V439H411Z" fill="#313131"/>
+<path d="M407 142H362V435H407V142Z" fill="#EAEDF1"/>
+<path d="M75 319V240H196V301H365V319H75Z" fill="#7AAEFB"/>
+<path d="M350 238H347V240H358H366L350 238Z" fill="#313131"/>
+<path d="M358 295V244H362V298L358 295Z" fill="#7D807F"/>
+<path d="M358 244H348V289H358V244Z" fill="#CCDDF7"/>
+<path d="M350 288L365 299H361L347 289V288H350Z" fill="#7D807F"/>
+<path d="M348 289H196V299H362L348 289Z" fill="#5197FD"/>
+<path d="M366 240H196H194V244H366V240Z" fill="#313131"/>
+<path d="M424 294L440 301V62L424 89V294Z" fill="#5197FD"/>
+<path d="M195 301V299H365V301H195Z" fill="#313131"/>
+<path d="M348 289V244H321V289H348Z" fill="#A3C6F9"/>
+<path d="M321 137H143V240H321V137Z" fill="#313131"/>
+<path d="M201 287V244H321V289H196V287H201Z" fill="#7D807F"/>
+<rect x="149" y="142" width="52" height="98" fill="#EAEDF1"/>
+<rect x="206" y="142" width="52" height="98" fill="#EAEDF1"/>
+<rect x="206" y="244" width="52" height="43" fill="white"/>
+<rect x="196" y="244" width="5" height="43" fill="white"/>
+<rect x="263" y="244" width="53" height="43" fill="white"/>
+<rect x="263" y="142" width="53" height="98" fill="#EAEDF1"/>
+<path d="M86 240V63H81V240H86Z" fill="#5197FD"/>
+<path d="M86 63H81V240H86V63Z" stroke="#B1B1B5" stroke-width="2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M196 319H321V439H196V436H201V323H196V319ZM206 323H258V436H206V323ZM316 323H263V436H316V323Z" fill="#313131"/>
+<path d="M440 482V319L424 319V458.5L440 482Z" fill="#E7E7E8"/>
+<rect x="411" y="289" width="12" height="150" fill="white"/>
+<rect x="321" y="319" width="37" height="120" fill="white"/>
+<path d="M196 482V439H423L424 440V459L440 482H196Z" fill="#DADADB"/>
+<path d="M1 47H529" stroke="#B1B1B5" stroke-width="2"/>
+<path d="M106 240V110H424M424 110V459L440 482V62L424 89V110Z" stroke="#B1B1B5" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M440 62H455V500H75V240H194" stroke="#B1B1B5" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M365 301V319H196V482H440" stroke="#B1B1B5" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M196.5 439.5L423 440" stroke="#B1B1B5" stroke-width="2"/>
+</svg>

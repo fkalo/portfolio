@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./general.css"/>
     <link rel="stylesheet" href="./style.css"/>
@@ -37,9 +38,17 @@
 </head>
 
 <body>
+    <!-- <div class="background">
+        <img class="" src="./images/background_lines.svg"
+                    alt=""/>
+    </div> -->
     <header id="navbar" class="header">
         <a href="#">
-            <img class="logo" src="./images/logo-white.png" alt="Fruzsina Kalo logo"/>
+            <img
+          class="logo"
+          src="./images/logo-body.svg"
+          alt="Fruzsina Kalo logo"
+            />
         </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
@@ -49,9 +58,9 @@
                 <li>
                     <a data-scroll class="smooth main-nav-link" href="#work">Work</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a data-scroll class="smooth main-nav-link" href="#methods">My approach</a>
-                </li>
+                </li> -->
                 <li>
                     <a data-scroll class="smooth main-nav-link" href="#contact">Contact</a>
                 </li>
@@ -68,6 +77,11 @@
     </header>
 
     <main>
+        <!-- <div class="background blur blur--colour1"></div>
+        <div class="background blur blur--colour2"></div>
+        <div class="background blur blur--colour3"></div>
+        <div class="background blur blur--colour4"></div> -->
+
         <section class="section section-hero">
             <div class="container">
                 <div class="hero-text-box">
@@ -77,6 +91,62 @@
             </div>
         </section>
 
+        <section class="section" id="work">
+            <div class="project--row">
+                <a class="project-do" href="./designoptions.html">
+                    <p class="project-title">Design Options</p>
+                    <div class="blob blob-project blob-designoptions">
+                        <img class="designoptions" src="./images/work-thumbnails/DesignOptions-thumbnail.png"
+                        alt="Skyscraper buildings"/>
+                        <div class="contrast--do"></div>
+                    </div>
+                </a>
+            </div> 
+            <div class="row project--row">
+                <div></div>
+                <a class="roadmap" href="./roadmap.html">
+                    <p class="project-title">Roadmap illustrations</p>
+                    <div class="blob blob-project blob-roadmap">
+                        <img class="roadmap-illustration" src="./images/work-thumbnails/Roadmap-thumbnail.svg"
+                        alt="MEP Modeler Archicad"/>
+                    </div>
+                </a>
+            </div> 
+            <div class="project--row">
+                <a class="ghac-connection" href="./ghac.html">
+                    <p class="project-title">Grasshopper-Archicad Connection</p>
+                    <!-- <p class="project-subtitle">an ongoing project</p> -->
+                    <div class="blob blob-project blob-ghac">
+                        <img class="ghac-illustration" src="./images/work-thumbnails/Grasshopper-Archicad Connection - Hotlinks.svg"
+                        alt="Skyscraper buildings"/>
+                        <!-- <div class="contrast--ghac"></div> -->
+                    </div>
+                </a>
+            </div>
+            <div class="connection-row project--row" id="contact">
+                <a class="linkedin" href="https://www.linkedin.com/in/fruzsinakalo/" target="_blank">
+                    <div class="blob blob-linkedin">
+                        <img class="linkedinlogo" src="./images/linkedin-logo.svg"
+                        alt="LinkedIn logo"/>
+                        <div class="contrast--linkedin"></div>
+                    </div>
+                </a>
+                <div class="email-container blob blob-email">
+                    <a class="email long" href="mailto:fruzsina.kalo@gmail.com">fruzsina.kalo@gmail.com</a>
+                    <a class="email short" href="mailto:fruzsina.kalo@gmail.com">@</a>
+                </div>
+            </div> 
+    
+            <!-- <div class="row project--row">
+                <div class="blob blob-project blob-ghac">
+                    <img class="ghac" src="./images/work-thumbnails/DesignOptions-thumbnail.png"
+                    alt="Grasshopper-Archicad Connection"/>
+                </div>
+            </div>  -->
+        </section>
+
+
+<!-- 
         <section class="section" id="work">
             <div class="container">
                 <p class="heading-secondary">Who am I?</p>
@@ -176,7 +246,6 @@
                             <li>After collecting “all” relevant data, we get deeper and try to make some sense out of them by the help of affinity sorting and empathy mapping.</li>
                             <li>Despite the fact that this phase is not about research - by the book at least -, I often realise that we need some more info to fill in some gaps. That's when I turn to the users once more, like detective <span class="columbo">Columbo</span> with just one more thing.</li>
                             <li>Also user personas for our products vary a lot. Using them during journey mapping and story mapping is crucial.</li>
-                            <!-- <li>Mapping our own products for possible connecting areas to examine is a non-stop task, but 90% of it happens in this phase and our squad members also contribute.</li> -->
                         </ul>
                     </div>
 
@@ -209,8 +278,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-
+        </section> -->
+<!-- 
         <section class="section section--contact" id="contact">
             <div class="container">
                 <p class="heading-secondary">What's next?</p>
@@ -220,13 +289,13 @@
             <div class="container contacts">
                 <a class="email" href="mailto:fruzsina.kalo@gmail.com">fruzsina.kalo@gmail.com</a>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer class="footer">
         <div class="container">
             <a class="footer-logo" href="#">
-                <img class="footer-logo" src="./images/logo-white.png" alt="Fruzsina Kalo logo"/>
+                <img class="footer-logo" src="./images/logo-body.svg" alt="Fruzsina Kalo logo"/>
             </a>
 
             <p class="copyright">
