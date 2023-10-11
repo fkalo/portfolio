@@ -459,16 +459,13 @@
 
 .process-image-link:hover,
 .process-image-link:active {
-  /* transform: translateY(-0.6rem); */
   --scaler: 1.1;
 }
 
 .process--image {
   max-width: 100%;
-  height: 99%;
   border-radius: 10px;
   overflow: hidden;
-  /* aspect-ratio: 1; */
 }
 
 .image-border {
