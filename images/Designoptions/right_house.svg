@@ -1,0 +1,29 @@
+<svg width="392" height="501" viewBox="0 0 392 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35 184L194 38L355 184V469H35V184Z" fill="#EAEDF1"/>
+<path d="M386 501H6V320H127V483H371V320H386V501Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M127 320H252V440H127V437H132V324H127V320ZM137 324H189V437H137V324ZM247 324H194V437H247V324Z" fill="#313131"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M341 320H289V440H341V320ZM293 321H338V436H293V321Z" fill="#313131"/>
+<path d="M371 483V320L355 320V459.5L371 483Z" fill="#E7E7E8"/>
+<rect x="342" y="320" width="12" height="120" fill="white"/>
+<rect x="252" y="320" width="37" height="120" fill="white"/>
+<path d="M128 483V440H354.07L355.066 441V460L371 483H128Z" fill="#DADADB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M228 120H164V302H228V120ZM169 125H223V297H169V125Z" fill="#313131"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M341 196H277V302H341V196ZM282 201H336V297H282V201Z" fill="#313131"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M115 196H51V302H115V196ZM56 201H110V297H56V201Z" fill="#313131"/>
+<path d="M7 217L1 212.5L196 18L391 213L385.5 216.5L364 200L198 61L51 183.5L7 217Z" fill="#A3C1EE"/>
+<path d="M1 212.5L7 217" stroke="#B1B1B5" stroke-width="2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 211.5V320H386V211.5L196 22L6 211.5ZM115 196H51V302H115V196ZM277 196H341V302H277V196ZM228 302V120H164V302H228Z" fill="#C0D2ED"/>
+<path d="M1 213V195.5L196 1L391 196V212.5L196 18L1 213Z" fill="#C0D2ED"/>
+<rect x="56" y="290" width="54" height="7" fill="#CCDDF7"/>
+<rect x="169" y="290" width="54" height="7" fill="#CCDDF7"/>
+<rect x="282" y="290" width="54" height="7" fill="#CCDDF7"/>
+<path d="M196 23.4124L385 211.915V500H7V211.915L196 23.4124Z" stroke="#B1B1B5" stroke-width="2"/>
+<path d="M370 321V479.811L356 459.686V321H370Z" stroke="#B1B1B5" stroke-width="2"/>
+<path d="M128 321H353V439H128V321Z" stroke="#B1B1B5" stroke-width="2"/>
+<path d="M353 439L355.5 441.5" stroke="#B1B1B5" stroke-width="2"/>
+<path d="M353.5 320.5H355.5" stroke="#B1B1B5"/>
+<path d="M128 439V483" stroke="#B1B1B5" stroke-width="2"/>
+<path d="M127 482H371" stroke="#B1B1B5" stroke-width="2"/>
+<path d="M1 213L196 18L391 212.5L385 217" stroke="#B1B1B5" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M1 213.5V196L196 1.5L391 196V213.715" stroke="#B1B1B5" stroke-width="2"/>
+</svg>
