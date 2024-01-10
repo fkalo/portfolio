@@ -44,24 +44,13 @@ Instead, 1rem = 1em = 16px */
     left: 60rem;
   }
 
-  .connection-row {
-    grid-template-columns: 2fr 4fr;
-    gap: 15rem;
-  }
-
-  .blob-email {
-    padding: 22rem 6.4rem;
-    border-radius: 220px 200px 170px 150px;
-    transform: translateY(-3rem);
-  }
-
   .email:link,
   .email:visited {
   font-size: 4.8rem;
   }
 
   /* projects.css */
-  .container--project:not(.full-background) {
+  .container--project:not(.full-background):not(.full-background-white) {
     max-width: 120rem;
   }
 
@@ -121,61 +110,31 @@ Instead, 1rem = 1em = 16px */
 
   /* style.css */
 
-  .work-content {
-    padding: 4.8rem 2.4rem 4.8rem 2.4rem;
-    font-size: 1.8rem;
-    letter-spacing: 0.3px;
+  .section--title {
+    font-size: 18rem;
   }
 
-  .diamond {
-    width: 16rem;
-    height: 32rem;
-  }
-
-  .discover--list,
-  .define--list,
-  .develop--list,
-  .deliver--list {
-    margin: auto 2.4rem;
+  .project-subtitle {
     font-size: 1.5rem;
-  }
-
-  .grid-diamonds > .text {
-    font-size: 1.8rem;
-  }
-
-  .blob-designoptions {
-    width: 68%;
-  }
+}
 
   .row {
     grid-template-columns: 1fr 5fr;
     gap: 8rem;
   }
 
-  .blob-ghac {
-    width: 70%;
-    transform: translateX(18%);
-  }
-
-  .ghac-connection .project-subtitle {
-    top: 14rem;
-    left: 50rem;
-  }
-
-  .blob-email {
-    padding: 20rem 6.4rem;
-    transform: translateY(0rem);
+  .blob-email, .blob-linkedin {
+    height: 32rem;
   }
 
   .email:link, .email:visited {
-    font-size: 3.6rem;
+    font-size: 4rem;
     letter-spacing: 2px;
   }
 
   /* projects.css */
 
-  .container--project:not(.full-background) {
+  .container--project:not(.full-background):not(.full-background-white) {
     max-width: 110rem;
   }
 
@@ -257,6 +216,10 @@ Instead, 1rem = 1em = 16px */
     padding: 0 9.6rem;
     gap: 2rem;
   }
+
+  .extra--side-padding {
+    padding: 0 9.6rem;
+  }
 }
 
 /* ****************** */
@@ -279,6 +242,11 @@ Instead, 1rem = 1em = 16px */
 
   .grid--5-cols {
     column-gap: 1.6rem;
+  }
+
+  .grid--early {
+    grid-template-columns: 1fr;
+    max-width: 74rem;
   }
 
   .heading-primary {
@@ -317,13 +285,8 @@ Instead, 1rem = 1em = 16px */
     margin-bottom: 2.4rem;
   }
 
-  .blob-designoptions {
-    width: 75%;
-  }
-
-  .blob-designoptions {
-    width: 78%;
-    transform: translateX(13%);
+  .section--title {
+    font-size: 14rem;
   }
 
   .project-do .project-title {
@@ -336,37 +299,19 @@ Instead, 1rem = 1em = 16px */
     gap: 0rem;
   }
 
-  .roadmap .project-title {
-    left: -10rem;
-    bottom: unset;
-    top: 3rem;
-    font-size: 4.8rem;
-    letter-spacing: 1px;
+  .zone {
+    background-color: #90bcb0;
+    color: #1B3A4B;
   }
 
-  .blob-ghac {
-    width: 83%;
-    transform: translateX(6%);
-  }
-
-  .ghac-connection .project-title {
-    top: 5rem;
-    left: 11rem;
-    right: 10rem;
-    text-align: end;
-    line-height: 1.4;
-    font-size: 4.8rem;
-  }
-
-  .ghac-connection .project-subtitle {
-    top: 24rem;
-    left: 38rem;
-    right: 12rem;
+  .ghac {
+    background-color: #1B3A4B;
+    color: #fff;
   }
 
   .connection-row {
-    grid-template-columns: 2fr 4fr;
-    gap: 12rem;
+    grid-template-columns: 3fr 5fr;
+    gap: 4rem;
   }
 
   .linkedinlogo {
@@ -374,10 +319,10 @@ Instead, 1rem = 1em = 16px */
     z-index: 2;
   }
 
-  .blob-email {
+  /* .blob-email {
     padding: 12rem 6.4rem;
     transform: translateY(-1rem);
-  }
+  } */
 
   .long {
     display: none;
@@ -406,8 +351,6 @@ Instead, 1rem = 1em = 16px */
     transform: scale(1.1) rotateZ(25deg);
     border-radius: 160px 190px 120px 180px;
   }
-
-
 
   .work-content {
     padding: 3.6rem 2rem 3.6rem 2rem;
@@ -439,7 +382,7 @@ Instead, 1rem = 1em = 16px */
 
   /* projects.css */
 
-  .container--project:not(.full-background) {
+  .container--project:not(.full-background):not(.full-background-white) {
     max-width: 90rem;
   }
 
@@ -569,8 +512,31 @@ Instead, 1rem = 1em = 16px */
     gap: 1.8rem;
   }
 
-  .full-background {
+  /* .full-background {
     padding: 9.6rem 12.8rem;
+  } */
+
+  .max--width {
+    max-width: 90rem;
+  }
+
+  .zone--image.max--width {
+    max-width: 80rem;
+  }
+
+  .container--project.full-background {
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    max-width: 130rem;
+    padding: 6.4rem 6.4rem;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+    position: relative;
+  }
+
+  .extra--side-padding {
+    padding: 0 3.6rem;
   }
 }
 
@@ -601,7 +567,7 @@ Instead, 1rem = 1em = 16px */
     padding: 0rem 0;
     margin-bottom: 8rem;
     min-height: 100vh;
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     flex-direction: column;
   }
@@ -617,24 +583,10 @@ Instead, 1rem = 1em = 16px */
     transform: translateX(0%);
   }
 
-  .project-do .project-title {
-    left: -2rem;
-    top: 3rem;
-    font-size: 4.8rem;
-  }
-
   .row {
     grid-template-columns: 1fr;
     gap: 0rem;
     padding: 12.8rem 8.4rem;
-  }
-
-  .roadmap .project-title {
-    left: -2rem;
-    bottom: unset;
-    top: 3rem;
-    font-size: 4.8rem;
-    letter-spacing: 1px;
   }
 
   .blob-roadmap:hover .roadmap-illustration,
@@ -642,41 +594,13 @@ Instead, 1rem = 1em = 16px */
     transform: scale(1.1) translateY(3%);
   }
 
-  .ghac-connection .project-title {
-    top: 5rem;
-    left: -2rem;
-    right: 10rem;
-    text-align: start;
-    line-height: 1.2;
-    font-size: 4.8rem;
-  }
-
-  .ghac-connection .project-subtitle {
-    top: 25rem;
-    left: 33rem;
-    right: 2rem;
-  }
-
   .connection-row {
     grid-template-columns: 1fr;
-    gap: 12rem;
-  }
-
-  .blob-linkedin {
-    border-radius: 160px 110px 140px 180px;
-    margin-top: 0%;
-    width: 138%;
-    transform: translateY(0rem) translateX(-100px);
+    gap: 6rem;
   }
 
   .linkedinlogo {
     padding: 13rem 0;
-  }
-
-  .blob-email {
-    padding: 12rem 6.4rem;
-    width: 200%;
-    transform: translateY(0rem) translateX(-30px);
   }
 
   .footer .container {
@@ -688,9 +612,10 @@ Instead, 1rem = 1em = 16px */
   }
 
   /* projects.css */
-  
-  .container--project:not(.full-background) {
+
+  .container--project:not(.full-background):not(.full-background-white) {
     max-width: 75rem;
+    padding: 6.4rem 6.4rem;
   }
 
   .grid--project {
@@ -928,11 +853,11 @@ Instead, 1rem = 1em = 16px */
     gap: 4.8rem;
   }
 
-  .main-nav-link.nav-cta:link,
+  /* .main-nav-link.nav-cta:link,
   .main-nav-link.nav-cta:visited {
     background-color: #a0d1c3;
     color: #fff;
-  }
+  } */
 
   .extra-padding {
     padding: 4.8rem 4.8rem;
@@ -946,6 +871,18 @@ Instead, 1rem = 1em = 16px */
     gap: 1.8rem;
     max-height: 100%;
     width: 100%;
+  }
+
+  .max--width {
+    max-width: 75rem;
+  }
+
+  .extra--side-padding {
+    padding: 0 3.6rem;
+  }
+
+  .zone--image.max--width {
+    max-width: 66rem;
   }
 }
 
@@ -977,7 +914,7 @@ Instead, 1rem = 1em = 16px */
 
   .heading-primary {
     font-size: 8rem;
-    letter-spacing: 20px;
+    letter-spacing: 12px;
     line-height: 1.2;
     margin-bottom: 2.4rem;
   }
@@ -996,63 +933,19 @@ Instead, 1rem = 1em = 16px */
   .hero-description {
     font-size: 2.4rem;
     letter-spacing: 2px;
-    margin-bottom: 6.4rem;
   }
 
-  .blob-designoptions {
-    width: 100%;
-    border-radius: 110px 150px 120px 160px;
-    transform: translateX(0%);
-  }
-
-  .blob-roadmap {
-    border-radius: 120px 140px 130px 100px;
-  }
-
-  .blob-ghac {
-    border-radius: 110px 150px 70px 130px;
-  }
-
-  .project-do .project-title {
-    left: -2rem;
-    top: 1rem;
-    font-size: 4.8rem;
-    white-space: normal;
-  }
-
-  .roadmap .project-title {
-    left: -2rem;
-    bottom: unset;
-    top: 0rem;
-    font-size: 4.8rem;
-    letter-spacing: 1px;
-    text-align: left;
-    white-space: normal;
-  }
-
-  .ghac-connection .project-title {
-    top: -6rem;
-    left: -2rem;
-    right: 10rem;
-    text-align: start;
-    line-height: 1.2;
-    font-size: 4.8rem;
-    white-space: normal;
-  }
-
-  .ghac-connection .project-subtitle {
+  .section--title.block {
     display: none;
   }
 
-  .blob-email {
-    padding: 12rem 6.4rem;
-    width: 200%;
-    transform: translateY(0rem) translateX(-57px);
+  .section--title.hidden {
+    display: block;
   }
 
-
-
-
+  .section--title-line {
+    display: none;
+  }
 
   .work {
     height: 24rem;
@@ -1071,32 +964,11 @@ Instead, 1rem = 1em = 16px */
     letter-spacing: 0.2px;
   }
 
-  .diamond {
-    width: 12rem;
-    height: 24rem;
-  }
-
-  .text--even,
-  .text--odd {
-    font-size: 1.6rem;
-  }
-
-  .grid-diamonds > .hidden {
-    width: 48rem;
-  }
-
-  .discover--list,
-  .define--list,
-  .develop--list,
-  .deliver--list {
-    margin: 3.2rem 1.6rem;
-    height: 32rem;
-  }
-
   /* projects.css */
-  .container--project:not(.full-background) {
+
+  .container--project:not(.full-background):not(.full-background-white) {
     max-width: none;
-    padding: 9.6rem 8.4rem;
+    padding: 6.4rem 6.4rem;
   }
 
   .section-project-intro {
@@ -1202,7 +1074,7 @@ Instead, 1rem = 1em = 16px */
     border-radius: 0;
   }
 
-  .container--project.flex--column {
+  .container--project.flex--column:not(.full-background) {
     max-width: 75rem;
     padding: 9.6rem 4.8rem;
   }
@@ -1221,6 +1093,10 @@ Instead, 1rem = 1em = 16px */
 
   .grid--process {
     gap: 1.6rem;
+  }
+
+  .max--width {
+    max-width: 62rem;
   }
 }
 
@@ -1283,50 +1159,32 @@ Instead, 1rem = 1em = 16px */
     max-width: 84rem;
   }
 
-  .blob-designoptions,
-  .blob-roadmap,
-  .blob-ghac {
-    border-radius: 40px;
+  .project-title {
+    left: 3rem;
   }
 
-  .project-do .project-title,
-  .roadmap .project-title {
-    left: 0rem;
-    top: -13rem;
-    width: 100%;
-    font-size: 4.8rem;
-    line-height: 1.2;
-    text-align: center;
+  .project-subtitle {
+    left: 3rem;
+    padding-right: 2rem;
   }
 
-  .ghac-connection .project-title {
-    left: 0rem;
-    right: unset;
-    top: -18rem;
-    font-size: 4.8rem;
-    line-height: 1.2;
-    text-align: center;
+  .underlay {
+    height: 100%;
+    width: 102%;
+    border-radius: 4rem 4rem 0 0;
+    left: 50%;
+    top: 40%;
   }
 
-  .blob-linkedin {
-    border-radius: 160px 110px 140px 180px;
-    margin-top: 0%;
-    width: 138%;
-    transform: translateY(0rem) translateX(-69px);
+  .do:hover .underlay, .do:active .underlay, .ghac:hover .underlay, .ghac:active .underlay, .roadmap:hover .underlay, .roadmap:active .underlay, .zone:hover .underlay, .zone:active .underlay {
+    height: 103%;
+    width: 103%;
+    transform: translateX(-50%) translateY(-3%);
   }
 
-  .blob-email {
-    padding: 12rem 6.4rem;
-    width: 200%;
-    border-radius: 170px 160px 130px 120px;
-    transform: translateY(0rem) translateX(-63px);
+  .section--title {
+    font-size: 12rem;
   }
-
-
-
-
-
-
 
   .grid--methods {
     grid-template-columns: 1fr;
@@ -1371,6 +1229,11 @@ Instead, 1rem = 1em = 16px */
 
   .grid--project > div:nth-child(1) {
     margin-bottom: 4.8rem;
+  }
+
+  .zone-go {
+    margin-bottom: 4.8rem;
+    padding: 0 3rem;
   }
 
   .grid--project > div:nth-child(2),
@@ -1482,7 +1345,7 @@ Instead, 1rem = 1em = 16px */
     width: auto;
   }
 
-  .container--project.flex--column {
+  .container--project.flex--column:not(.full-background) {
     max-width: 56rem;
     padding: 7.8rem 0;
   }
@@ -1537,7 +1400,15 @@ Instead, 1rem = 1em = 16px */
   .community--flex {
     padding: 0 5.6rem;
     gap: 1.8rem;
-}
+  }
+
+  .max--width {
+    max-width: 45rem;
+  }
+
+  .zone--image.max--width {
+    max-width: 45rem;
+  }
 }
 
 /* - FONT SIZE SYSTEM (px)

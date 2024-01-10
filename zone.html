@@ -67,36 +67,31 @@
       <a class="logo" href="/">
         <img
           class="logo--outline"
-          src="./images/logo-outline.png"
+          src="./images/logo-body-outline.svg"
           alt="Fruzsina Kalo logo"
         />
         <img
           class="logo--hover hidden"
-          src="./images/logo-hover.png"
+          src="./images/logo-body.svg"
           alt="Fruzsina Kalo logo"
         />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="smooth main-nav-link hidden" href="/#">Home</a>
+              <a class="smooth main-nav-link hidden" href="/#">Home</a>
           </li>
           <li>
-            <a class="smooth main-nav-link" href="/#work">Work</a>
+              <a class="smooth main-nav-link" href="/#work">Work</a>
           </li>
           <li>
-            <a class="smooth main-nav-link" href="/#methods">My approach</a>
+              <a class="smooth main-nav-link" href="/#about">About</a>
           </li>
           <li>
-            <a class="smooth main-nav-link" href="/#contact">Contact</a>
+              <a class="smooth main-nav-link" href="/#contact">Contact</a>
           </li>
           <li>
-            <a
-              class="main-nav-link nav-cta"
-              target="_blank"
-              href="./pdf/resume.pdf"
-              >Resume</a
-            >
+              <a class="main-nav-link nav-cta" target="_blank" href="./pdf/resume.pdf">Resume</a>
           </li>
         </ul>
       </nav>
@@ -107,167 +102,109 @@
       </button>
     </header>
 
-    <main class="zone">
-      <div class="project-nav">
-        <a href="./adeslogo.html">
-          <div class="pager left">
-            <div class="pager-circle">
-              <span class="nav-text nav-text--left"
-                >I'm a team player, too!</span
-              >
-            </div>
-          </div>
-        </a>
-        <a href="./omnifood.html">
-          <div class="pager right">
-            <div class="pager-circle">
-              <p class="nav-text nav-text--right">I can script, too!</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
       <section class="section-project-intro">
         <div class="project-intro">
-          I love to explore complex products, such as Archicad.
+          Customize Zones
         </div>
+        <div class="project-summary">enhancing documentation in Archicad 25</div>
       </section>
 
-      <section class="container--project grid grid--project">
-        <div>
-          <div class="heading-project">Improve Zones</div>
-          <span class="project-summary"
-            >A comprehensive UX design project within an enterprise BIM
-            software.</span
-          >
-        </div>
-        <img
-          class="thumbnail"
-          src="./images/Zone_project/00_thumbnail.png"
-          alt="Zone improvements thumbnail in BIM software, Archicad"
-        />
+      <section class="container--project accent-background">
+        <img class="zone--image zone--image-main" src="./images/Zone_project/00_thumbnail.png" alt=" feature of Archicad 27">
       </section>
 
-      <section class="container--project grid grid--project">
-        <div class="subheading-project top">My role</div>
-        <div>
-          <p class="content highlight">
-            As a new hire, I arrived at the 'define' phase of the project and
-            had been working on it with a senior designer colleague, mostly to
-            learn our processes and methods.
-          </p>
-          <p class="content">
-            Since the project - actually two bigger epics handled very closely
-            together - took quite some time to wrap up, I gladly took on more
-            and more responsibility in the later phases.
-          </p>
-        </div>
-      </section>
-
-      <section class="container--project grid grid--project">
-        <div class="subheading-project top">Problem statement</div>
+      <section class="text--container">
+        <div class="subheading-project">The need</div>
         <div>
           <p class="content">
-            As our users have been diving deeper and deeper in BIM modelling,
-            their documentation methods are getting more advanced day by day.
-            It's not all about the floor plans anymore.
+            As architects have been delving deeper and deeper into accurate 3D modeling, their project 
+            documentation methods are getting more advanced day by day. It's not all about the floor plans anymore.
+          </p>
+                      <!-- <p>keep it simple, my audience doesn't know about BIM and such. explain what these are to someone who's not involved in architecture.</p> -->
+
+          <p class="content">
+            There's a tool in Archicad, called the Zone Tool. 
+            Zones are spatial units in your Project. Usually, they represent rooms; wings of a building; blocks of a housing estate or functional areas of a building. 
           </p>
           <p class="content highlight">
-            The Zone Tool and its valuable data was originally represented on
-            floor plans, but to catch up on the above mentioned demand, we
-            wanted to extend the editing and display possibilities in different
-            views, such as sections and elevations.
+            Zones and their valuable data were originally 
+            represented on floor plans, but to catch up on the above mentioned demand, we needed to extend 
+            the editing and display possibilities in different views, such as sections, and elevations.
           </p>
+        </div>
+      </section>
+
+      <section class="container--project contains--image flex--column">
+        <img class="zone--image max--width" src="./images/Zone_project/Section_BME.png" alt="Design Options designer weekly calendar">
+        <p class="content center footnote">
+          I would've totally used this feature in Architecture school - if only we had released it three years earlier...
+        </p>
+      </section>
+
+      <section class="container--project flex--column full-background">
+        <div class="text--container">
+          <div class="subheading-project">Situation</div>
+          <div>
+            <p class="content highlight">
+              Given a long-standing product with numerous functions connecting to each other on different levels, we needed to rethink some of these connections fundamentally.
+            </p>
+            <p class="content">
+              They were especially important to prepare for future development possibilities.
+            </p>
+          </div>
+        </div>
+        <img class="zone--image max--width extra--margin" src="./images/Zone_project/Solution_NewZoneLabel.png" alt=" feature of Archicad 27">
+      </section>
+
+      <section class="text--container">
+        <div class="subheading-project">Task</div>
+        <div>
           <p class="content">
-            Given a long-standing product with numerous functions connecting to
-            each other on different levels, we also needed to rethink some
-            fundamental changes in these connections. Those might not be
-            particularly perceptible, but were especially important to prepare
-            the structure for future development possibilities.
+            Let me share a function I led the design of - a connecting area that required careful consideration.
+          </p>
+          <p class="content highlight">
+            Since in architectural work, success lies in the details.
           </p>
         </div>
       </section>
 
-      <section class="container--project grid grid--project">
-        <div class="top">
-          <div class="subheading-project">Our solution</div>
-          <p class="content">(or at least some bits of the whole package)</p>
-        </div>
-        <img
-          class="project-image sub"
-          src="./images/Zone_project/Solution_NewZoneLabel.png"
-          alt="New Zone Label in BIM software, Archicad"
-        />
+      <section class="container--project contains--image flex--column">
+        <img class="zone--image max--width" src="./images/Zone_project/Detail_BME.png" alt="Design Options designer weekly calendar">
+        <p class="content center footnote">
+          And by detail, I mean the most important ones.
+        </p>
       </section>
 
-      <section class="container--project grid grid--project">
+      <section class="text--container">
+          <div class="subheading-project">Scene 23, take 1...</div>
+          <div>
+            <p class="content">
+              There's a feature in Archicad called Graphic Overrides. Based on element criterias, model elements in the plan can be overridden with predefined visual parameters. For example: let's say we can paint all elements made of C10/12 concrete material bright yellow for some reason.
+            </p>
+            <p class="content highlight">
+              One of my many design tasks was to define the behaviour in the so-called override styles, to ensure as many useful possibilities as we could with Zones and of course, other element types.
+            </p>
+          </div>
+      </section>
+
+      <section class="container--project accent-background">
+        <img class="zone--image max--width" src="./images/Zone_project/Graphic_Override_Rules_dialog.png" alt="Design Options designer weekly calendar">
+      </section>
+
+      <section class="text--container">
+        <div class="subheading-project">... and action!</div>
         <div>
           <p class="content highlight">
-            Firstly, let me show you a little video which summarizes our
-            solution.
+            I instantly turned to rapid prototyping, which was beneficial in so many ways.
           </p>
           <p class="content">
-            It was created by our marketing team about the improvements in this
-            project. Even as someone who has never used Archicad before, can
-            have an insight of the complexity of our project.
-          </p>
-          <p class="content">
-            Undoubtedly, plenty of design and development work have been put
-            into the project behind the scenes.
-          </p>
-        </div>
-        <iframe
-          class="video"
-          src="https://www.youtube.com/embed/Np8zPJoXVaU"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section>
-
-      <section class="container--project grid grid--project">
-        <img
-          class="project-image"
-          src="./images/Zone_project/GO_01.png"
-          alt="Graphic Override Rule settings in Archicad"
-        />
-        <div>
-          <p class="content highlight">
-            Let's look at some examples of different connecting areas and
-            situations, which had to be considered and thought out well. All
-            because in the architectural professions the devil's always in the
-            details.
-          </p>
-          <p class="content">
-            As you may have seen in the video, there's a feature in Archicad
-            called Graphic Overrides. Based on element criterias, model elements
-            in the plan can be overridden with predefined visual parameters. For
-            example: let's say we can paint all elements made of C10/12 concrete
-            material bright yellow for some reason.
-          </p>
-          <p class="content">
-            One of our many design tasks was to define the behaviour in the
-            so-called override styles, to ensure as many useful possibilities as
-            we could with Zones and of course, other element types.
+            I used them to think through the possibilities and their effect on the model, but they were also used for user tests, consultations with the development team and the QA Engineers used them as a reference in their complex test cases.
           </p>
         </div>
       </section>
 
-      <section class="container--project grid grid--project">
-        <div>
-          <p class="content highlight">
-            I instantly turned to rapid prototyping, which was beneficial in so
-            many ways.
-          </p>
-          <p class="content">
-            I used them to think through the possibilities and their effect on
-            the model, but they were also used for user tests, consultations
-            with the development team and the QA Engineers used them as a
-            reference in their complex test cases.
-          </p>
-        </div>
-        <div class="grid grid--3-cols">
+      <section class="container--project grid grid--project full-background">
+        <div class="grid grid--3-cols max--width zone-go">
           <img
             class="project-image-group"
             src="./images/Zone_project/GO_01.png"
@@ -301,85 +238,38 @@
         </div>
       </section>
 
-      <section class="container--project grid grid--project">
-        <img
-          class="project-image"
-          src="./images/Zone_project/Zone_label.png"
-          alt="Zone Label tools in Archicad"
-        />
+      <section class="text--container">
+        <div class="subheading-project">Key for success</div>
         <div>
           <p class="content">
-            Another great example of the functionality with a thousand faces is
-            the question of
-            <span class="highlight"
-              >collaboration with Zones and their associated Labels.</span
-            >
+            This project was definitely not a one man show. And our team was most effective when everyone who was involved in a particular story, knew the connections and background of it, so the common goal was clear.
           </p>
-          <p class="content">
-            Architects and users can collaborate on the same plan via our
-            signature Teamwork functionality real-time. This can be ensured by
-            element reservation - the one who reserves the element in question
-            is able to edit, others can just look without touching.
-          </p>
-          <p class="content">
-            There is also a permission system behind the whole Teamwork
-            functionality, so different permissions can be assigned to
-            architects, draftsmen and other contributors on different levels of
-            authority.
+          <p class="content highlight">
+            This was guaranteed by our interactive story map, which we always adjusted, so every time we looked at it for clarification, it was up-to-date.
           </p>
         </div>
       </section>
 
-      <section class="container--project grid grid--project">
-        <div>
-          <p class="content">
-            As this is an area where different personas have different needs and
-            at least 3 different factors affect the behaviour in and the
-            circumstances can combine different factors, I thought the perfect
-            way to visualise all cases and the possibilities in all kinds of
-            combination was to gather them all in one place and create a big
-            table.
-          </p>
-          <p class="content">
-            This way I could be sure I haven't missed anything in the process.
-          </p>
-        </div>
-        <img
-          class="project-image"
-          src="./images/Zone_project/TW_table.png"
-          alt="Zone Label tools in Archicad"
-        />
+      <section class="container--project accent-background">
+        <img class="max--width extra--side-padding" src="./images/Zone_project/Story map_simplified.png" alt=" feature of Archicad 27">
       </section>
 
-      <section class="container--project grid grid--project">
-        <div class="subheading-project">Key Takeaways</div>
+      <section class="text--container">
+        <div class="subheading-project">How's it going</div>
         <div>
           <p class="content">
-            This was my first and most complex project I've worked on so far,
-            which taught me plenty. With such a huge project like this, I think
-            <span class="highlight">
-              it's crucial to have everyone on the same page</span
-            >
-            with all the details, especially the Product Owner, the Product
-            Designer(s) and the Development Team(s).
-          </p>
-          <p class="content">
-            We were the most effective when everyone who was involved in a
-            particular story, knew the connections and background of it, so the
-            common goal was clear.
-          </p>
-          <p class="content">
-            This was guaranteed by our
-            <span class="highlight">interactive story map</span>, which was
-            always adjusted, so every time we looked at it for clarification, it
-            was up-to-date. Since I joined the project after the initial
-            story-mapping - with other joining colleagues - it was very helpful
-            that we went through the whole map with the team once again,
-            therefore we could ask smart questions and even complement some
-            parts.
+            Graphisoft introduced these enhancements in 2021 with the release of the 25th version of Archicad. We delivered small additional features in the next two versions as well.
+          <p class="content highlight">
+            Check out our promo video of the feature.
           </p>
         </div>
       </section>
+
+      <section class="container--project flex--column">
+        <iframe class="video image-shadow" src="https://www.youtube.com/embed/Np8zPJoXVaU?si=f9vKiCB9f14xtaHb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+
+
     </main>
 
     <footer class="footer">
@@ -387,13 +277,13 @@
         <a class="footer-logo" href="/">
           <img
             class="footer-logo"
-            src="./images/logo-white.png"
+            src="./images/logo-body.svg"
             alt="Fruzsina Kalo logo"
           />
         </a>
         <p class="copyright">
           Designed & built by Fruzsina Kaló &copy;
-          <span class="year">2023</span>
+          <span class="year">2024</span>
         </p>
       </div>
     </footer>

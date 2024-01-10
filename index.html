@@ -38,10 +38,6 @@
 </head>
 
 <body>
-    <!-- <div class="background">
-        <img class="" src="./images/background_lines.svg"
-                    alt=""/>
-    </div> -->
     <header id="navbar" class="header">
         <a href="#">
             <img
@@ -58,9 +54,9 @@
                 <li>
                     <a data-scroll class="smooth main-nav-link" href="#work">Work</a>
                 </li>
-                <!-- <li>
-                    <a data-scroll class="smooth main-nav-link" href="#methods">My approach</a>
-                </li> -->
+                <li>
+                    <a data-scroll class="smooth main-nav-link" href="#about">About</a>
+                </li>
                 <li>
                     <a data-scroll class="smooth main-nav-link" href="#contact">Contact</a>
                 </li>
@@ -77,219 +73,109 @@
     </header>
 
     <main>
-        <!-- <div class="background blur blur--colour1"></div>
-        <div class="background blur blur--colour2"></div>
-        <div class="background blur blur--colour3"></div>
-        <div class="background blur blur--colour4"></div> -->
-
         <section class="section section-hero">
             <div class="container">
                 <div class="hero-text-box">
                     <div class="heading-primary">Fruzsina Kaló</div>
                     <div class="hero-description">product designer</div>
+                    <div class="hero-description-sub">&amp; architect</div>
+                    <div class="hero-description-sub">&amp; qa engineer</div>
                 </div>
             </div>
         </section>
 
         <section class="section" id="work">
-            <div class="project--row">
-                <a class="project-do" href="./designoptions.html">
+            <div class="title--container">
+                <p class="section--title">WORK</p>
+                <div class="section--title-line"></div>
+            </div>
+            <div class="container grid grid--2-cols grid--early">
+                <a class="tile do" href="./designoptions.html">
                     <p class="project-title">Design Options</p>
-                    <div class="blob blob-project blob-designoptions">
-                        <img class="designoptions" src="./images/work-thumbnails/DesignOptions-thumbnail.png"
-                        alt="Skyscraper buildings"/>
-                        <div class="contrast--do"></div>
-                    </div>
+                    <p class="project-subtitle">UX Design of Archicad 27</p>
+                    <img class="designoptions" src="./images/work-thumbnails/DesignOptions-thumbnail.svg"
+                    alt="Archicad Design Option feature"/>
+                    <div class="underlay"></div>
                 </a>
-            </div> 
-            <div class="row project--row">
-                <div></div>
-                <a class="roadmap" href="./roadmap.html">
-                    <p class="project-title">Roadmap illustrations</p>
-                    <div class="blob blob-project blob-roadmap">
-                        <img class="roadmap-illustration" src="./images/work-thumbnails/Roadmap-thumbnail.svg"
-                        alt="MEP Modeler Archicad"/>
-                    </div>
+                <a class="tile roadmap" href="./roadmap.html">
+                    <p class="project-title">Public roadmap</p>
+                    <p class="project-subtitle">Illustrations for Graphisoft product features</p>
+                    <img class="roadmap-illustration" src="./images/work-thumbnails/Roadmap-thumbnail.svg"
+                    alt="MEP Modeler Archicad"/>
+                    <div class="underlay"></div>
                 </a>
-            </div> 
-            <div class="project--row">
-                <a class="ghac-connection" href="./ghac.html">
-                    <p class="project-title">Grasshopper-Archicad Connection</p>
-                    <!-- <p class="project-subtitle">an ongoing project</p> -->
-                    <div class="blob blob-project blob-ghac">
-                        <img class="ghac-illustration" src="./images/work-thumbnails/Grasshopper-Archicad Connection - Hotlinks.svg"
+                <a class="tile zone" href="./zone.html">
+                    <p class="project-title">Customize Zones</p>
+                    <p class="project-subtitle">UX Design of Archicad 25</p>
+                    <img class="ghac-illustration" src="./images/work-thumbnails/Zone_thumbnail.svg"
                         alt="Skyscraper buildings"/>
-                        <!-- <div class="contrast--ghac"></div> -->
-                    </div>
+                    <div class="underlay"></div>
+                </a>
+                <a class="tile ghac" href="./ghac.html">
+                    <p class="project-title">Parametric Design</p>
+                    <p class="project-subtitle">UX Design of Grasshopper Add-On</p>
+                    <img class="ghac-illustration" src="./images/work-thumbnails/Grasshopper-Archicad Connection - Hotlinks.svg"
+                        alt="Skyscraper buildings"/>
+                    <div class="underlay"></div>
                 </a>
             </div>
-            <div class="connection-row project--row" id="contact">
+        </section>
+
+        <section class="section" id="about">
+            <div class="title--container">
+                <p class="section--title">ABOUT</p>
+                <div class="section--title-line"></div>
+            </div>
+            <div class="container grid grid--2-cols grid--early">
+                <div class="profile-picture"></div> 
+                <div class="about-me">
+                    <div class="about-tile-empty">
+                        <p class="about-highlight">Hi, I'm Fruzsina.</p>
+                        <p class="about-content">
+                            A product designer with 3 years experience based in Malmö, originally from Hungary.
+                            Currently developing myself and the amazing products at Graphisoft.
+                        </p>
+                        <p class="about-content">                            
+                            But here's the fun twist – before diving into design, I spent 4.5 years climbing the QA ladder,
+                            going from trainee to Staff QA Engineer. Being a Test Manager and Test Analyst,
+                            I learned the ins and outs of the development process. This QA background helps
+                            me talk the talk with developers and stay a step ahead in the design game.
+                        </p>
+                        <p class="about-content">
+                            Oh, and did I mention I have a master's in Architecture? Juggling complex projects
+                            is my jam, especially the brainstorming part. I thrive on collaboration and bringing
+                            ideas to life.
+                        </p>
+                        <p class="about-content">
+                            So, if you're looking for a designer who's not afraid of complexity, loves tossing
+                            around ideas, and can chat tech with developers, that's me.
+                            Let's make something awesome together!
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="section" id="contact">
+            <div class="title--container">
+                <p class="section--title block ">CONTACT</p>
+                <p class="section--title hidden">CNTCT</p>
+                <div class="section--title-line"></div>
+            </div>
+            <div class="container connection-row">
                 <a class="linkedin" href="https://www.linkedin.com/in/fruzsinakalo/" target="_blank">
-                    <div class="blob blob-linkedin">
+                    <div class="tile blob-linkedin">
                         <img class="linkedinlogo" src="./images/linkedin-logo.svg"
                         alt="LinkedIn logo"/>
                         <div class="contrast--linkedin"></div>
                     </div>
                 </a>
-                <div class="email-container blob blob-email">
+                <div class="email-container tile blob-email">
                     <a class="email long" href="mailto:fruzsina.kalo@gmail.com">fruzsina.kalo@gmail.com</a>
                     <a class="email short" href="mailto:fruzsina.kalo@gmail.com">@</a>
                 </div>
             </div> 
-    
-            <!-- <div class="row project--row">
-                <div class="blob blob-project blob-ghac">
-                    <img class="ghac" src="./images/work-thumbnails/DesignOptions-thumbnail.png"
-                    alt="Grasshopper-Archicad Connection"/>
-                </div>
-            </div>  -->
         </section>
-
-
-<!-- 
-        <section class="section" id="work">
-            <div class="container">
-                <p class="heading-secondary">Who am I?</p>
-                <p class="subheading">get to know me through my work</p>
-            </div>
-
-            <div class="container">
-                <div class="description">I am a product designer...</div>
-            </div>
-
-            <div class="container grid grid--5-cols margin-bottom-md">
-                <a class="work" href="./adeslogo.html">
-                    <div class="work-content">...who is all for the team</div>
-                    <div>
-                        <img class="hidden work-thumbnail" src="./images/work-thumbnails/ADES-thumbnail.png"
-                        alt="Graphisoft Tribe logo design"/>
-                    </div>
-                </a>
-
-                <a class="work" href="./zone.html">
-                    <div class="work-content">...who is eager to design complex products</div>
-                    <div>
-                        <img class="hidden work-thumbnail" src="./images/work-thumbnails/Zone-thumbnail.png"
-                            alt="Graphisoft Archicad Zones UX design"/>
-                    </div>
-                </a>
-                
-                <a class="work" href="./omnifood.html">
-                    <div class="work-content">...with coding skills</div>
-                    <div>
-                        <img class="hidden work-thumbnail" src="./images/work-thumbnails/Omnifood-thumbnail.png"
-                        alt="Omnifood html css webdesign"/>
-                    </div>
-                </a>
-
-                <a class="work" href="./homely.html">
-                    <div class="work-content">...who seeks learning experiences</div>
-                    <div>
-                        <img class="hidden work-thumbnail" src="./images/work-thumbnails/Designflows-thumbnail.png"
-                        alt="Designflows UI design"/>
-                    </div>
-                </a>
-
-                <a class="work" href="./cottonpasta.html">
-                    <div class="work-content">...who likes to explore creative activities</div>
-                    <div>
-                        <img class="hidden work-thumbnail" src="./images/work-thumbnails/Cottonpasta-thumbnail.png"
-                        alt="Cottonpasta macrame small business branding"/>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <section class="section" id="methods">
-            <div class="container">
-                <p class="heading-secondary">How do I do it?</p>
-                <p class="subheading">let me show you my methods</p>
-            </div>
-
-            <div class="container">
-                <div class="grid grid--methods">
-                    <div class="description">You must've heard the term</div>
-                    <div class="overflow">
-                        <ul class="description list">
-                            <li class="method-words method-word-1">'Design Thinking'</li>
-                            <li class="method-words method-word-2">'Double Diamond'</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="description inline">&#8211 here's how I applied them in the past few years.</div>
-            </div>
-
-            <div class="container grid-center margin-bottom-md">
-                <div class="grid-diamonds">
-                    <div class="column column--discover" id="discover">
-                        <div class="diamond diamond--discover">
-                            <div class="text text--odd">discover</div>
-                        </div>
-                    </div>
-
-                    <div class="text hidden" id="hidden-discover">
-                        <ul class="list discover--list">
-                            <li>Let's face it, we can never do enough discovery. That's why I use our product's community portal, where I can observe, listen and engage in conversation with our users directly.</li>
-                            <li>Besides, to explore the user needs and collect problem-specific data, I usually conduct interviews.</li>
-                            <li>Although we lacked of this opportunity due to COVID, I think the most important research is observation, especially with architects.</li>
-                        </ul>
-                    </div>
-
-                    <div class="column column--define" id="define">
-                        <div class="diamond diamond--define">
-                            <div class="text text--even">define</div>
-                        </div>
-                    </div>
-
-                    <div class="text hidden" id="hidden-define">
-                        <ul class="list define--list">
-                            <li>After collecting “all” relevant data, we get deeper and try to make some sense out of them by the help of affinity sorting and empathy mapping.</li>
-                            <li>Despite the fact that this phase is not about research - by the book at least -, I often realise that we need some more info to fill in some gaps. That's when I turn to the users once more, like detective <span class="columbo">Columbo</span> with just one more thing.</li>
-                            <li>Also user personas for our products vary a lot. Using them during journey mapping and story mapping is crucial.</li>
-                        </ul>
-                    </div>
-
-                    <div class="column column--develop" id="develop">
-                        <div class="diamond diamond--develop">
-                            <div class="text text--odd">develop</div>
-                        </div>
-                    </div>
-
-                    <div class="text hidden" id="hidden-develop">
-                        <ul class="list develop--list">
-                            <li>Like research, story mapping and user journey mapping doesn't stop after one phase either.</li>
-                            <li>Apart from ideating with the team(s) and fellow designers and quickly visualising these through prototypes, our complex product needs to be evaluated too. To map connecting areas and gather all necessary information for consistency and feasibility.</li>
-                            <li>Remember <span class="columbo">Columbo?</span> I would give a call or write to our interviewees with just one more thing, to quickly validate the proposed concept.</li>
-                        </ul>
-                    </div>
-
-                    <div class="column column--deliver" id="deliver">
-                        <div class="diamond diamond--deliver">
-                            <div class="text text--even">deliver</div>
-                        </div>
-                    </div>
-
-                    <div class="text hidden" id="hidden-deliver">
-                        <ul class="list deliver--list">
-                            <li>Deliver phase starts when the question “what” is replaced by “how”.</li>
-                             <li>Apart from having smaller tasks, such as drawing the last icons, finalising copy and being prepared to answer questions of QA Engineers, I always make time to check the finished stories and sometimes we iterate a little on the design or implementation.</li>
-                            <li>But! “A design isn't finished until someone is using it.” - Our enterprise product has an alpha and beta release period, which allows us to connect with our users and evaluate our previous decisions.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-<!-- 
-        <section class="section section--contact" id="contact">
-            <div class="container">
-                <p class="heading-secondary">What's next?</p>
-                <p class="subheading">get in touch to discuss</p>
-            </div>
-
-            <div class="container contacts">
-                <a class="email" href="mailto:fruzsina.kalo@gmail.com">fruzsina.kalo@gmail.com</a>
-            </div>
-        </section> -->
     </main>
 
     <footer class="footer">
@@ -300,7 +186,7 @@
 
             <p class="copyright">
                 designed & built by Fruzsina Kaló &copy;
-                <span class="year">2023</span>
+                <span class="year">2024</span>
             </p>
         </div>
     </footer>

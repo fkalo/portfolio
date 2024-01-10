@@ -85,8 +85,6 @@ body {
   line-height: 1;
   color: #1B3A4B;
   background-color: #F2FAF7;
-  /* background-color: #FBE0C3; */
-  /* background-color: #ffe6a7; */
   overflow-x: hidden;
   /* scroll-behavior: smooth; */
 }
@@ -95,16 +93,30 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /* ****************** */
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 24rem 0;
+  margin-bottom: 4.8rem;
+  /* height: 95vh; */
+}
+
 .section:not(.testimonials, .section-hero) {
   padding: 0rem 0;
-  margin-bottom: 8rem;
-  min-height: 100vh;
+  margin-bottom: 15rem;
+  /* min-height: 100vh; */
 }
 
 .container {
   max-width: 140rem;
   padding: 0 6.4rem;
   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
 }
 
 .grid {
@@ -114,10 +126,10 @@ body {
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
   display: inline-grid;
-  max-height: 4rem;
-  column-gap: 2rem;
-  overflow: hidden;
-  margin-bottom: 4.8rem;
+  column-gap: 4rem;
+  row-gap: 4rem;
+  /* overflow: hidden; */
+  margin-bottom: 9.6rem;
 }
 
 .grid--3-cols {
@@ -187,6 +199,19 @@ body {
   margin-bottom: 4.2rem;
 }
 
+.content {
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+.content:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
 /* HELPER CLASSES */
 
 .margin-right-sm {
@@ -205,10 +230,18 @@ body {
   text-align: center;
 }
 
+.block {
+  display: block;
+}
+
 .hidden {
   display: none;
 }
 
 .inline {
   display: inline-block;
+}
+
+.max--width {
+  max-width: 120rem;
 }

@@ -35,6 +35,10 @@
   padding: 9.6rem 9.6rem;
 }
 
+.extra--side-padding {
+  padding: 0 7.2rem;
+}
+
 .flex--column {
   display: flex;
   flex-direction: column;
@@ -56,6 +60,13 @@
   background-color: #1B3A4B;
   color: #fff;
   max-width: 100%;
+}
+
+.full-background-white {
+  background-color: #fff;
+  color: #1B3A4B;
+  max-width: 100%;
+  margin-bottom: 0;
 }
 
 .fading-background img {
@@ -257,6 +268,7 @@
 }
 
 .blob-testimonial {
+  background-color: #fff;
   padding: 6.4rem 3.6rem;
   display: flex;
   flex-direction: column;
@@ -312,19 +324,6 @@
 /* ****************** */
 /* TEXT CONTENT */
 /* ****************** */
-
-.content {
-  line-height: 1.35;
-  font-weight: 300;
-}
-
-.content:not(:last-child) {
-  margin-bottom: 2.4rem;
-}
-
-.highlight {
-  font-weight: 600;
-}
 
 .list {
   margin-left: 1.2rem;
@@ -414,6 +413,7 @@
   overflow: hidden;
   max-height: 600px;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .do--image {
@@ -428,12 +428,49 @@
 
 .roadmap--image {
   width: 100%;
+  position: relative;
   transition: all 0.4s;
 }
 
-.roadmap--image:hover,
-.roadmap--image:active {
-  transform: scale(1.025);
+.roadmap--overlay {
+  opacity: 0;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 30%;
+  width: 30%;
+  transition: all 0.4s;
+}
+
+.grid-image:hover .roadmap--image {
+  /* transform: scale(1.025); */
+  opacity: 0.5;
+}
+
+.grid-image:hover .roadmap--overlay {
+  /* transform: scale(1.025); */
+  opacity: 1;
+}
+
+.roadmap--overlay:hover {
+}
+
+.zone--image.max--width {
+  max-width: 90rem;
+  max-height: none;
+  margin: 0 auto;
+}
+
+.zone--image.extra--margin {
+  margin: 6.4rem auto;
+}
+
+.zone--image-main {
+  max-height: 100%;
+  max-width: 90%;
+  border-radius: 10px;
 }
 
 .grid-image:link,
@@ -443,6 +480,7 @@
   transition: all 0.4s;
   border-radius: 10px;
   aspect-ratio: 1.8;
+  position: relative;
 }
 
 .grid-image:hover,
@@ -518,6 +556,11 @@
 .community--quote {
   max-width: 100%;
   border-radius: 10px;
+  filter: none; 
+  -webkit-filter: blur(0px); 
+  -moz-filter: blur(0px); 
+  -ms-filter: blur(0px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 }
 
 
